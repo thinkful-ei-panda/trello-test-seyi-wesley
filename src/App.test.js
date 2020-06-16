@@ -7,8 +7,7 @@ import ReactDOM from 'react-dom';
 // make the App component available
 import App from './App';
 
-import renderer from 'react-test-renderer'
-
+import renderer from 'react-test-renderer';
 
 // this is the test case
 it('renders without crashing', () => {
@@ -26,5 +25,5 @@ it('renders the UI as expected', () => {
   const tree = renderer
     .create(<App />)
     .toJSON();
-  expect(tree).toMatchSnapshot();
-});
+  expect(tree).toMatchSnapshot();  
+  });
