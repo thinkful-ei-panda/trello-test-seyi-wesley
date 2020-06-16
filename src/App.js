@@ -10,18 +10,16 @@ function App(prop) {
 
   let cardArray = []
    for(let i=0; i<STORE.lists[j].cardIds.length; i++) {
-     console.log(i,j)
     let cardId = STORE.lists[j].cardIds[i];
     cardArray.push(STORE.allCards[cardId])
   }
   const tempVariable = <List key = {STORE.lists[j].id} header = {STORE.lists[j].header} cards = {cardArray}/>
   tempArray.push(tempVariable);
 }
-console.log(tempArray);
   return (
     <main className ='App'>
       <header className='App-header'>
-        <h1>Trelloyes!</h1>
+        <h1>Trelloyes!!!!</h1>
       </header>
       <div className='App-List'>
       {tempArray}
