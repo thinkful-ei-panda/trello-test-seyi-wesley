@@ -11,7 +11,7 @@ import './List.css';
             </header>
             <div className='List-cards'>
                 {cards}
-                <button type="button" class="List-add-button">+ Add Random Card</button>
+                <button type="button" className="List-add-button">+ Add Random Card</button>
             </div>
         </section>
     );
